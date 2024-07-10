@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(208, 229, 236);
+}
+h1 {
+    font-weight: bold;
+    color: #fff; /* Text color */
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f;
+    /* Adjust the color and size to achieve the desired glowing effect */
+}
+
+.controls {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.controls button, .controls select {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+#chessboard {
+    display: grid;
+    gap: 1px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell.white {
+    background-color: #f0d9b5;
+}
+
+.cell.black {
+    background-color: #b58863;
+}
+
+.cell.conflict {
+    background-color: #ff6b6b;
+}
+
+#timer, #score, #highScore {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#highScore {
+    color: #4a4a4a;
+}
